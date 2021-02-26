@@ -1,0 +1,57 @@
+:root {
+    /*color scheme,
+    lightest color to darkest*/
+
+    /*main*/
+    --white:#fff;
+    --black:#242531;
+    --black-light:#3A3C53;
+    --gray:#646A7C;
+
+
+    --blue:#58AEFF;
+    --orange:#FF8158;
+    --yellow:#FFB658;
+    --purple:#B058FF;
+}
+
+/*default / resets*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+img {
+    display:block;
+    max-width:100%;
+}
+
+li {
+    list-style: none;
+}
+
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: var(--black);
+}
+
+
+
+
+
+.project-container {
+    position: absolute;
+    background-color:var(--white);
+    width:50rem;
+    height:50rem;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    border-radius: 10px;
+}
+
+
