@@ -9,10 +9,17 @@
     --gray:#646A7C;
 
 
-    --blue:#58AEFF;
-    --orange:#FF8158;
+
     --yellow:#FFB658;
+    --orange:#FF8158;
+    --blue:#58AEFF;
+    --blue-dark:#467DB6;
     --purple:#B058FF;
+    --green-lime:#9AD045;
+    --pink:#F85698;
+    --pink-dark:#DF1E54;
+
+
 }
 
 /*default / resets*/
@@ -62,6 +69,10 @@ body {
     top:50%;
     transform:translate(-50%, -50%);
     border-radius: 10px;
+
+    display:grid;
+    grid-template-rows:auto 2fr;
+    padding:1.5rem;
 }
 
 
@@ -69,7 +80,8 @@ body {
     /* background:rgba(255, 0, 0, 0.404); */
     display:flex;
     justify-content: space-between;
-    padding:2rem 1rem;
+    padding-bottom:1.5rem;
+    font-size:0.85rem;
 }
 
 .project__navbar__items {
@@ -96,6 +108,28 @@ body {
     font-weight:600;
 }
 
+
+.upgrade-btn {
+    background-color:transparent;
+    border:1px solid #000;
+    border-radius: 20px;
+    padding:0.5rem 1.25rem;
+    font-weight:400;
+    font-size: 1rem;
+    letter-spacing: 0.25px;
+}
+
+
+.profile-link {
+    background:var(--pink);
+    color:#fff;
+    font-weight:600;
+    font-size:1rem;
+    padding:0.5rem;
+    border-radius: 50%;
+}
+
+
 /*dot and dot color variation*/
 .dot {
     background-color:#000;
@@ -104,7 +138,77 @@ body {
     border-radius: 50%;
 }
 
+.dot-yellow {
+    background-color:#FFB658;
+    background-color:var(--yellow);
+}
+
 .dot-orange {
     background-color:orange;
     background-color:var(--orange);
+}
+
+.dot-blue {
+    background-color:#58AEFF;
+    background-color:var(--blue);
+}
+
+.dot-blue-dark {
+    background-color:#467DB6;
+    background-color:var(--blue-dark);
+}
+
+.dot-purple {
+    background-color:purple;
+    background-color:var(--purple);
+}
+
+.dot-green-lime {
+    background-color:greenyellow;
+    background-color:var(--green-lime);
+}
+
+.dot-pink {
+    background-color:#F85698;
+    background-color:var(--pink);
+}
+
+.dot-pink-dark {
+    background-color:#DF1E54;
+    background-color:var(--pink);
+}
+
+
+
+
+
+.project-selection {
+    /* background:red; */
+
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows:1fr;
+}
+
+.projects__sidebar {
+    background-color:var(--black);
+    color:#fff;
+    border-radius: 20px;
+    padding:1.5rem;
+}
+
+.projects__sidebar__heading {
+    
+}
+
+.sidebar__project {
+    display:flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+
+.projects {
+    background-color:#fff;
 }
